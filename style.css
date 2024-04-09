@@ -191,7 +191,7 @@ section {
 
 .section__text__p2 {
   font-size: 1.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .title {
@@ -239,14 +239,15 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
+
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: rgba(45, 15, 153, 1);
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: rgba(45, 15, 153, 1);
+  color: white;
 }
 
 .btn-color-2 {
@@ -269,8 +270,8 @@ section {
 
 .about-containers {
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-top: rem;
 }
 
 .about-details-container {
