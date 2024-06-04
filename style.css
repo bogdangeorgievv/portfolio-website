@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;  
 }
 
 html {
@@ -16,8 +16,98 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: #fff;
 }
+
+
+/* ANIMATED BACKGROUND */
+
+.objects {
+  background: linear-gradient(to right, #159957, #155799);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.wrapper {
+  position: relative;
+}
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+}
+
+.box li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+  border-radius: 50%;
+}
+
+.box li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.box li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+
+.box li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+
+.box li:nth-child(4) {
+  left: 45%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+
+.box li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+
+.box li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0) scale(0);
+  }
+  100%{
+    transform: translateY(-800px) scale(2);
+    opacity: 0;
+  }
+}
+
+
 
 /* TRANSITION */
 
@@ -34,6 +124,7 @@ nav,
 }
 
 nav {
+  color: #fff;
   justify-content: space-around;
   align-items: center;
   height: 17vh;
@@ -45,16 +136,17 @@ nav {
   font-size: 1.5rem;
 }
 
-a {
-  color: black;
+.nav-links a {
+  color: #fff;
   text-decoration: none;
   text-decoration-color: white;
 }
 
-a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
+.nav-links a:hover {
+  background-color: rgba(45, 15, 153, 1);
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
@@ -165,16 +257,20 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
   height: 80vh;
+  gap: 2rem;
 }
 
 .section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
   margin: auto 0;
 }
+
+.profile-pic {
+  border-radius: 50%; 
+  width: 250px; 
+  height: 250px;
+}
+
 
 .section__text {
   align-self: center;
@@ -182,7 +278,7 @@ section {
 }
 
 .section__text p {
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .section__text__p1 {
@@ -195,6 +291,7 @@ section {
 }
 
 .title {
+  color: #fff;
   font-size: 3rem;
   text-align: center;
 }
@@ -204,6 +301,11 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+}
+
+#socials-container img:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 
 /* ICONS */
@@ -229,16 +331,19 @@ section {
   border-radius: 2rem;
 }
 
-.btn-color-1,
+.btn-color-1 {
+  border: #fff 1px solid;
+}
+
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: #fff 1px solid;
+  color: #fff;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
 }
-
 
 .btn-color-2:hover {
   background: rgba(45, 15, 153, 1);
@@ -254,10 +359,6 @@ section {
 
 .btn-color-2 {
   background: none;
-}
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
@@ -311,12 +412,6 @@ section {
   height: 80%;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -362,9 +457,13 @@ article .icon {
   position: relative;
 }
 
+.experience-details-container {
+  display: block;
+}
+
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: #fff;
 }
 
 .project-img {
@@ -394,6 +493,11 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .contact-info-upper-container {
@@ -437,3 +541,4 @@ footer {
 footer p {
   text-align: center;
 }
+
