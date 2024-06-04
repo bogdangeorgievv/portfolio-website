@@ -56,6 +56,10 @@
       height: 83vh;
       margin-bottom: 0;
     }
+
+    #about .section-container {
+      margin-top: 25px;
+    }
     article {
       font-size: 1rem;
     }
@@ -87,8 +91,6 @@
       text-align: center;
     }
     .section__pic-container {
-      width: auto;
-      height: 46vw;
       justify-content: center;
     }
     .section__text__p2 {
