@@ -48,6 +48,9 @@
   }
   
   @media screen and (max-width: 600px) {
+    #about {
+      margin-top: 3rem;
+    }
     #contact,
     footer {
       height: 40vh;
