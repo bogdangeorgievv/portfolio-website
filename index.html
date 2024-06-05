@@ -22,6 +22,7 @@
 </div>
 
 <div class="wrapper">
+  <!-- NAV -->
     <nav id="desktop-nav">
       <div class="logo">Bogdan Georgiev</div>
       <div>
@@ -49,7 +50,7 @@
         </div>
       </div>
     </nav>
-
+<!-- PROFILE -->
     <section id="profile">
       <div class="section__pic-container">
         <img class="profile-pic" src="./assets/profile-pic1.png" alt="Bogdan profile picture" />
@@ -80,7 +81,7 @@
       </div>
     </section>
 
-    <!-- about -->
+    <!-- ABOUT SECTION -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -104,7 +105,10 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>Software University<br />Certifications</p>
+              <p>Software University</p>
+              <button class="btn certificate-btn">
+                Certificates
+              </button>
             </div>
           </div>
           <div class="text-container">
@@ -121,6 +125,8 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
+    <!-- EXPERIENCE -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -320,7 +326,30 @@
       />
     </section>
 
-    <!-- Contact -->
+    <!-- CERTIFICATES -->
+    <section id="certificates" style="display: none;">
+      <h1 class="title">Software University</h1>
+           <div class="certificate-content">
+                   <div class="certificate-card">
+                       <img src="./assets/Programming Basics.jpeg" alt="">
+                       <button class="btn btn-certificate">View Full Certificate</button>
+                   </div>
+                   <div class="certificate-card">
+                       <img src="./assets/Programming Fundamentals.jpeg" alt="">
+                       <button class="btn btn-certificate">View Full Certificate</button>
+                   </div>
+                   <div class="certificate-card">
+                       <img src="./assets/JS Advanced.jpeg" alt="">
+                       <button class="btn btn-certificate">View Full Certificate</button>
+                   </div>
+                   <div class="certificate-card">
+                       <img src="./assets/JS Applications.jpeg" alt="">
+                       <button class="btn btn-certificate">View Full Certificate</button>
+                   </div>
+           </div>
+     </section>
+
+    <!-- CONTACT-->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -346,7 +375,8 @@
     <footer>
       <p>Copyright &#169; 2024 Bogdan Georgiev. All Rights Reserved.</p>
     </footer>
-  </div>
+
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

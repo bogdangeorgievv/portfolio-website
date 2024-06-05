@@ -155,13 +155,14 @@ nav {
 }
 
 .logo:hover {
-  cursor: default;
+  cursor: pointer;
 }
 
 /* HAMBURGER MENU */
 
 #hamburger-nav {
   display: none;
+  
 }
 
 .hamburger-menu {
@@ -420,6 +421,19 @@ section {
   gap: 4rem;
 }
 
+.certificate-btn {
+  text-decoration: none;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+.certificate-btn:hover {
+  border: 1px solid #fff;
+  background-color: #155799;
+  color: #fff;
+  
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -556,4 +570,40 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* CERTIFICATES */
+
+.certificate-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.certificate-card {
+  position: relative;
+  width: 280px;
+  margin: 10px;
+}
+
+.certificate-card img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btn-certificate {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 78%;
+  left: 50%;
+  padding: 5px;
+  border: none;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btn-certificate:hover {
+  color: #fff;
+  background-color: #155799;
 }
