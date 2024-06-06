@@ -158,6 +158,10 @@ nav {
   cursor: pointer;
 }
 
+.logo-ham:hover {
+  cursor: pointer;
+}
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
