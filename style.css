@@ -427,7 +427,7 @@ section {
 }
 
 .certificate-btn {
-  text-decoration: none;
+  color: black;
   border: 1px solid black;
   margin-top: 5px;
 }
@@ -606,6 +606,7 @@ footer p {
   padding: 5px;
   border: none;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  color:black;
 }
 
 .btn-certificate:hover {

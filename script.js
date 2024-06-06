@@ -89,7 +89,7 @@ function hideAllSections() {
   aboutRef.style.display = "none";
   experienceRef.style.display = "none";
   projectsRef.style.display = "none";
-  
+  certificatesSection.style.display = "none";
 }
 
 
