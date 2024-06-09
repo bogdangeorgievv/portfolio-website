@@ -22,6 +22,7 @@
     #experience,
     .experience-details-container {
       margin-top: 2rem;
+      margin: 0 20px;
     }
     #profile,
     .section-container {
@@ -70,7 +71,10 @@
       height: fit-content;
       margin-bottom: 2rem;
     }
-    .about-containers,
+    .about-containers {
+      flex-direction: column;
+    
+    }
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;

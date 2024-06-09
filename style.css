@@ -15,6 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 p {
   color: #fff;
 }
@@ -106,7 +107,6 @@ p {
     opacity: 0;
   }
 }
-
 
 
 /* TRANSITION */
@@ -248,11 +248,11 @@ nav {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 50px;
+  max-width: 1150px;
+  margin: 0 auto; 
   box-sizing: border-box;
   min-height: fit-content;
+  padding-bottom: 5%;
 }
 
 .section-container {
@@ -265,7 +265,7 @@ section {
   display: flex;
   justify-content: center;
   height: 80vh;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .section__pic-container {
@@ -444,6 +444,8 @@ section {
 
 #experience {
   position: relative;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
 .experience-sub-title {
@@ -490,8 +492,8 @@ article .icon {
 }
 
 .card { 
-  width: 350px;
-  border-radius: 8px;
+  width: 500px;
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   margin: 20px;
@@ -528,8 +530,8 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
   margin-top: 2rem;
+  bottom: 0;
 }
 
 #contact a {
