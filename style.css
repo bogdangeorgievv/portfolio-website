@@ -582,16 +582,20 @@ footer p {
 
 /* CERTIFICATES */
 
+#certificates {
+  width: 90%;
+}
+
 .certificate-content {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
 
 .certificate-card {
   position: relative;
-  width: 280px;
+  width: 260px;
   margin: 10px;
 }
 
